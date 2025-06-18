@@ -3,9 +3,11 @@ A RESTful API for managing restaurants, pizzas, and the prices of specific pizza
 
 Setup Instructions
 Clone the repository
-
+````
 git clone <https://github.com/LavenderMorara/pizza-restaurant-challenge.git>
+
 cd pizza-restaurant-challenge
+````
 Create a virtual environment with pipenv
 
 pipenv install
