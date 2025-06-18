@@ -10,29 +10,48 @@ cd pizza-restaurant-challenge
 ````
 Create a virtual environment with pipenv
 
+````
 pipenv install
 pipenv shell
+````
+
 Install dependencies
 
+````
 pip install Flask flask-migrate flask-sqlalchemy sqlalchemy_serializer
+````
+
 Run the application
 
+````
 flask run
+````
 Database Migration & Seeding
+
+
 Initialize the database
 
+````
 flask db init
+```` 
+
 Generate migration scripts
 
+````
 flask db migrate -m "Initial migration."
+````
+
 Apply migrations
 
+````
 flask db upgrade
+````
 Seed the database
 
 Run the seed.py file:
-
+````
 python seed.py
+````
 Routes Summary
 Method	Endpoint	Description
 GET	/restaurants	List all restaurants
@@ -58,12 +77,13 @@ Method: POST
 URL: http://localhost:5555/restaurant_pizzas
 
 Body (JSON):
-
+````
 {
   "price": 10,
   "pizza_id": 1,
   "restaurant_id": 2
 }
+````
 DELETE Restaurant
 
 Method: DELETE
